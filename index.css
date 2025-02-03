@@ -9,7 +9,7 @@
     border-radius: 5px;
     outline: solid 1px black;
 
-    height: 600px;
+    height: 650px;
     width: 1200px;
 }
 
@@ -31,6 +31,29 @@ h2 {
     font-weight: 400;
 }
 
+h3 {
+    font-family: "Open Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+}
+
 #main {
     padding-left: 30px;
+}
+
+#copyright {
+    position: absolute;
+    bottom: 10px;
+}
+
+#hublink {
+    background-color: #138275;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    font-family: "Open Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
 }
