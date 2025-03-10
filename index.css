@@ -8,15 +8,26 @@
     box-shadow: 0 0 10px grey;
     border-radius: 5px;
     outline: solid 1px black;
-
     height: 650px;
-    width: 1200px;
+    width: 100%;
+    max-width: 1200px; /* Ensures the centrebox does not exceed 1200px */
+    max-height: 100vh; /* Ensure it doesn't exceed the viewport height */
+    overflow-y: auto; /* Allows scrolling if content overflows */
+    padding: 20px; /* Adds padding for a more aesthetic look */
+    box-sizing: border-box; /* Ensures padding is included in the width/height calculations */
 }
 
 body {
     font-family: "Open Sans", serif;
     font-optical-sizing: auto;
     font-weight: 300;
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Ensure the body takes the full height of the screen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Prevents horizontal scrolling */
 }
 
 h1 {
@@ -39,6 +50,9 @@ h3 {
 
 #main {
     padding-left: 30px;
+    max-height: calc(100vh - 80px); /* Prevents the main section from exceeding the height */
+    overflow-y: auto; /* Scrollable if content overflows */
+    overflow-x: hidden; /* Prevents horizontal scrolling */
 }
 
 #copyright {
